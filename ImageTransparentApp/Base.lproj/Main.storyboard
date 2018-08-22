@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageTransparentApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test-background-white" translatesAutoresizingMaskIntoConstraints="NO" id="EWV-PM-lCC">
+                                <rect key="frame" x="16" y="253.5" width="343" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="pJM-53-jov"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd9-ff-31f">
+                                <rect key="frame" x="127" y="443.5" width="120" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="tQ0-FT-Aun"/>
+                                </constraints>
+                                <state key="normal" title="Transparent!!!">
+                                    <color key="titleColor" red="0.43921568630000002" green="0.73333333329999995" blue="0.66666666669999997" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="transparentButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mrs-13-fD9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43921568630000002" green="0.73333333329999995" blue="0.66666666669999997" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="EWV-PM-lCC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1I5-QF-i4L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EWV-PM-lCC" secondAttribute="trailing" constant="16" id="5HO-62-eyz"/>
+                            <constraint firstItem="Xd9-ff-31f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UyD-DK-CPV"/>
+                            <constraint firstItem="EWV-PM-lCC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cWM-u4-ig8"/>
+                            <constraint firstItem="Xd9-ff-31f" firstAttribute="top" secondItem="EWV-PM-lCC" secondAttribute="bottom" constant="30" id="lSH-XB-G8D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="targetImageView" destination="EWV-PM-lCC" id="Vd0-Mg-Zno"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test-background-white" width="582" height="393"/>
+    </resources>
+</document>
